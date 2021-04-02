@@ -6,10 +6,26 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct ContentView: View {
     @State var leftDiceNumber = 1
     @State var rightDiceNumber = 4
+    @State var audioPlayer: AVAudioPlayer!
+    
+    func playSounds(_ soundFileName: String) {
+        guard let soundURL = Bundle.main.url(forResource: soundFileName, withExtension: nil) else {
+            fatalError("Sound not found! :/")
+        }
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
+        } catch {
+            print(error.localizedDescription)
+        }
+        
+        audioPlayer.play()
+    }
     
     var body: some View {
         ZStack {
@@ -34,6 +50,7 @@ struct ContentView: View {
                 .padding(.horizontal)
                 Spacer()
                 Button(action: {
+                    playSounds("dice-roll.mp3")
                     leftDiceNumber = Int.random(in: 1...6)
                     rightDiceNumber = Int.random(in: 1...6)
                 }) {

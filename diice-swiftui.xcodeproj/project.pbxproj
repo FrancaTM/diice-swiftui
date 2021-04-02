@@ -13,6 +13,8 @@
 		25190680260E906000535E16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2519067F260E906000535E16 /* Assets.xcassets */; };
 		25190683260E906000535E16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25190682260E906000535E16 /* Preview Assets.xcassets */; };
 		25190686260E906000535E16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25190684260E906000535E16 /* LaunchScreen.storyboard */; };
+		25190691261799F500535E16 /* dice-shaking.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 25190690261799F400535E16 /* dice-shaking.mp3 */; };
+		25190694261799FB00535E16 /* dice-roll.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 25190693261799FB00535E16 /* dice-roll.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		25190682260E906000535E16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		25190685260E906000535E16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25190687260E906000535E16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25190690261799F400535E16 /* dice-shaking.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "dice-shaking.mp3"; sourceTree = "<group>"; };
+		25190693261799FB00535E16 /* dice-roll.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "dice-roll.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		25190678260E905A00535E16 /* diice-swiftui */ = {
 			isa = PBXGroup;
 			children = (
+				2519068F261799DA00535E16 /* sounds */,
 				25190679260E905A00535E16 /* AppDelegate.swift */,
 				2519067B260E905A00535E16 /* SceneDelegate.swift */,
 				2519067D260E905A00535E16 /* ContentView.swift */,
@@ -73,6 +78,15 @@
 				25190682260E906000535E16 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2519068F261799DA00535E16 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				25190690261799F400535E16 /* dice-shaking.mp3 */,
+				25190693261799FB00535E16 /* dice-roll.mp3 */,
+			);
+			path = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,8 +147,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				25190686260E906000535E16 /* LaunchScreen.storyboard in Resources */,
+				25190691261799F500535E16 /* dice-shaking.mp3 in Resources */,
 				25190683260E906000535E16 /* Preview Assets.xcassets in Resources */,
 				25190680260E906000535E16 /* Assets.xcassets in Resources */,
+				25190694261799FB00535E16 /* dice-roll.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
